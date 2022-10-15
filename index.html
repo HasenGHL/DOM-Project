@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
+    <title>Shopping Cart</title>
+    <script defer src="script.js"></script>
+</head>
+<body>
+        <div class="container">
+        <h1 class="header">Items In Your Shopping Cart</h1>
+    <hr/>
+        <div class="items">
+            <div class="cart-row">
+                <img width="150" height="150" src="https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/iphone-14-plus-starlight-select-202209?wid=400&hei=400&fmt=jpeg&qlt=95&fit=constrain&.v=1660750194234" alt="">
+            <div class="item-description">
+                <div class="item-header">
+                <h2 class="item-name">iPhone 14 Plus 256GB Starlight</h2>
+                <input class="quantity" type="number" value="1">
+                <p class="price">$1029.00</p>
+                </div>
+                <hr class="desc"/>
+                <div class="remove">
+                <p class="notes"><strong>Carrier:</strong><br/>
+                    Connect with any carrier after you get your new iPhone.</p>
+                    <button type="button" class="heart-btn"> <span id="heart" class="material-symbols-outlined">
+                        favorite
+                        </span> </button>
+                    <button class="remove-btn">Remove</button>
+                </div>    
+                <hr class="item-break"/>
+            </div>
+            </div>
+            <div class="cart-row">
+                <img width="150" height="150" src="https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/MPU43?wid=400&hei=400&fmt=jpeg&qlt=95&fit=constrain&.v=1660944002882" alt="">
+                <div class="item-description">
+                    <div class="item-header">
+                    <h2 class="item-name">
+                        iPhone 14 Plus Clear Case with <br> MagSafe</h2>
+                    <input class="quantity" type="number" value="1">
+                    <p class="price">$49.00</p>
+                    </div>
+                    <hr class="desc"/>
+                    <div class="remove">
+                    <p class="notes note-2">Pay 0% APR for 12 months</p>
+                        <button type="button" class="heart-btn"> <span id="heart" class="material-symbols-outlined">
+                            favorite
+                            </span> </button>
+                        <button class="remove-btn">Remove</button>
+                    </div>  
+                    <hr class="item-break"/>  
+                </div> 
+            </div>
+        </div>
+        <div class="totalPrice">
+            <p class="total-price-txt">Total Price:</p>
+            <p class="total-price">$1,078.00</p>
+        </div>
+    <hr/>
+        <div class="checkout">
+            <button class="btn" id="buttn">Check Out</button>
+        </div>
+        </div>
+
+</body>
+</html>
