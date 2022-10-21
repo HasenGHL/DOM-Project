@@ -58,5 +58,16 @@ for (var i = 0; i < heartButton.length; i++) {
 
 function heartClicked(event) {
  redHeart = event.target
- redHeart.style.color = '#FF0000'
+ let toggle=false;
+ if(!toggle){
+    toggle=true;
+    redHeart.classList.toggle("heart-btn-x");
+    console.log(toggle)
+ }
+ if(toggle){
+    toggle=false
+    redHeart.classList.toggle("heart-btn-y");
+    console.log(toggle)
+ }
+ 
 }
